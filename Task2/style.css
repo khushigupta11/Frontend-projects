@@ -1,0 +1,149 @@
+:root{
+    --box-shadow: 0px 1px 1px rgb(199, 199, 199, 1);
+    --income: green;
+    --savings: rgb(65, 65, 230);
+    --expense: red;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title h1{
+    text-align: center;
+}
+.link{
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    padding:10px;
+    margin:10px;
+}
+.link:hover{
+    background-color: rgb(199, 194, 194);
+}
+h2{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.paid-container #paid{
+    font-size: 1.2em;
+}
+.cashflow{
+    display:flex;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.income-container{
+    border-right: 1px solid rgb(199, 199, 199, 1);
+    padding-right: 20px;
+}
+.savings-container{
+    border-right: 1px solid rgb(199, 199, 199, 1);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.expense-container{
+    padding-left: 20px;
+}
+#income, #savings, #expense{
+    font-size: 1.3em;
+}
+#income{
+    color:var(--income);
+}
+#savings{
+    color:var(--savings);
+}
+#expense{
+    color:var(--expense);
+}
+.transaction-container{
+    margin-top: 30px;
+}
+#transaction{
+    list-style: none;
+    margin:0 ;
+    padding:0;
+}
+#transaction li {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding:20px;
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+}
+#transaction li .income-amt{
+    display:inline-block;
+    background-color: var(--income);
+    color: ivory;
+    padding: 5px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+#transaction li .saving-amt{
+    display:inline-block;
+    background-color: var(--savings);
+    color: ivory;
+    padding: 5px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+#transaction li .expense-amt{
+    display:inline-block;
+    background-color: var(--expense);
+    color: ivory;
+    padding: 5px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+#transaction li button{
+    padding:5px;
+    margin-right: 10px;
+}
+.expense-price, .savings-price, .income-price{
+    box-shadow: var(--box-shadow);
+    padding:5px;
+    margin:10px;
+}
+.expense-qnty, .savings-qnty, .income-qnty{
+    box-shadow: var(--box-shadow);
+    padding:5px;
+    margin:10px;
+}
+.form-container{
+    margin-top: 30px;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+.form-container form label{
+    padding-bottom: 10px;
+}
+.form-container form input{
+    height:20px;
+    margin-bottom: 10px;
+}
+.form-container form button{
+    border:none;
+    padding:10px;
+    margin-bottom: 10px;
+    font-size:1em;
+    color:ivory;
+}
+#incomeBtn{
+    background-color: var(--income);
+}
+#savingsBtn{
+    background-color: var(--savings);
+}
+#expenseBtn{
+    background-color: var(--expense);
+}

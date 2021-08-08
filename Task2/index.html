@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="title">
+        <h1>Expense Manager</h1>
+
+        <div class="link">
+            <a href="page2.html">Go to Routine Manager</a>
+        </div>
+
+        <div class="cashflow">
+            <div class="income-container">
+                <h2>Income</h2>
+                <div id="income">Rs 1200</div>
+            </div>
+            <div class="savings-container">
+                <h2>Savings</h2>
+                <div id="savings">Rs 500</div>
+            </div>
+            <div class="expense-container">
+                <h2>Expense</h2>
+                <div id="expense">Rs 200</div>
+            </div>
+        </div>
+        <div class="paid-container">
+            <h2>Amount Paid</h2>
+            <div id="paid">Rs 100</div>
+        </div>
+
+        <div class="transaction-container">
+            <h2>Transactions History</h2>
+            <ul id="transaction">
+               <!--<li>
+                   Salary
+                   <div>
+                       <span class="income-price">Rs 5000</span>
+                       <span class="income-qnty">1</span>
+                       <span class="income-amt">Rs 5000</span>
+                       <button>Pay</button>
+                       <button>Edit</button>
+                       <button>Delete</button>
+
+                   </div>
+               </li> 
+               <li>
+                Savings
+                <div>
+                    <span class="saving-price">Rs1000</span>
+                    <span class="saving-qnty">1</span>
+                    <span class="saving-amt">Rs 1000</span>
+                    <button>Pay</button>
+                    <button>Edit</button>
+                    <button>Delete</button>
+
+                </div>
+            </li> 
+            <li>
+                Buy Chair
+                <div>
+                    <span class="expense-price">Rs 100</span>
+                    <span class="expense-qnty">4</span>
+                    <span class="expense-amt">Rs 400</span>
+                    <button>Pay</button>
+                    <button>Edit</button>
+                    <button>Delete</button>
+
+                </div>
+            </li> 
+            <li>
+                Buy Table
+                <div>
+                    <span class="expense-price">Rs 500</span>
+                    <span class="expense-qnty">2</span>
+                    <span class="expense-amt">Rs 1000</span>
+                    <button>Pay</button>
+                    <button>Edit</button>
+                    <button>Delete</button>
+
+                </div>
+            </li> -->
+            </ul>
+        </div>
+
+        <div class="form-container">
+            <h2>Add new Transaction</h2>
+            <form onsubmit="return false;">
+                <label for="name">Name</label>
+                <input id="name" type="text" required>
+                <label for="amount">Price (Individual)</label>
+                <input id="amount" type="number" required>
+                <label for="quantity">Quantity</label>
+                <input id="quantity" type="number" required>
+                <label for="total">Total Amount</label>
+                <input id="total" type="number" required>
+                
+                <button id="incomeBtn">Add Income</button>
+                <button id="savingsBtn">Add Savings</button>
+                <button id="expenseBtn">Add Expense</button>
+                
+            </form>
+        </div>
+    </div>
+   <script src="script.js"></script>
+
+</body> 
+</html>
