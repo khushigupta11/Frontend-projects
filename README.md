@@ -1,2 +1,2 @@
-# Frontend projects
+# Expense Manager
 
